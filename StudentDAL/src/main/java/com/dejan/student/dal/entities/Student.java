@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 //model class
-@Entity // mapping to db studenttab
+@Entity // mapping to data base studenttab
 @Table(name = "studenttab") // different name of the table name in data base
 public class Student {
 
