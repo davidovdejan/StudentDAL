@@ -7,7 +7,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//model class
+//create model class
 @Entity // mapping to data base studenttab
 @Table(name = "studenttab") // different name of the table name in data base
 public class Student {
