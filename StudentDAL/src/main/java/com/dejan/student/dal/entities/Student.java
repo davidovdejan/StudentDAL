@@ -9,13 +9,13 @@ import javax.persistence.Table;
 
 //model class
 @Entity // mapping to db studenttab
-@Table(name = "studenttab") // different name of the table
+@Table(name = "studenttab") // different name of the table name in data base
 public class Student {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO) // id is auto_increment in db
 	private long id;
-	@Column(name = "sname") // name in db is sname
+	@Column(name = "sname") // name in db is 'sname'
 	private String name;
 	@Column(name = "scourse")
 	private String course;

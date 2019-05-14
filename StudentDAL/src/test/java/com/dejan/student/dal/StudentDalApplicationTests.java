@@ -35,8 +35,8 @@ public class StudentDalApplicationTests {
 	}
 
 	@Test
-	public void testUpdate() {
-	Optional<Student> student = repository.findById(2l);
+	public void testUpdate() throws NullPointerException{
+	Optional<Student> student = repository.findById(1l);
 	student.orElse(null).setFee(50d);
 	repository.save(student.orElse(null));
 	System.out.println(student);
