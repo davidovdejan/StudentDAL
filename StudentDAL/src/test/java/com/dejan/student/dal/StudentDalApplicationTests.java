@@ -30,15 +30,15 @@ public class StudentDalApplicationTests {
 
 	@Test
 	public void testFind() {
-		Optional<Student> student = repository.findById(1l);
+		Student student = repository.getOne(1l);
 		System.out.println(student);
 	}
 
 	@Test
 	public void testUpdate() {
-	Optional<Student> student = repository.findById(2l);
-	student.orElse(null).setFee(50d);
-	repository.save(student.orElse(null));
+	Student student = repository.getOne(1l);
+	student.setFee(50d);
+	repository.save(student);
 	System.out.println(student);
 	}
 
